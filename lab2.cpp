@@ -50,11 +50,11 @@ public:
 
 	void Num_1() {
 		while (true) {
-			check_math_input = stack<char>(); // Очистка стека перед каждой новой проверкой
+			check_math_input = stack<char>(); // ГЋГ·ГЁГ±ГІГЄГ  Г±ГІГҐГЄГ  ГЇГҐГ°ГҐГ¤ ГЄГ Г¦Г¤Г®Г© Г­Г®ГўГ®Г© ГЇГ°Г®ГўГҐГ°ГЄГ®Г©
 			cout << "Enter the string (enter space to exit):\n ";
 			getline(cin, str);
 
-			if (str == " ") // Если пользователь ввел пробел, завершаем проверку
+			if (str == " ") // Г…Г±Г«ГЁ ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гј ГўГўГҐГ« ГЇГ°Г®ГЎГҐГ«, Г§Г ГўГҐГ°ГёГ ГҐГ¬ ГЇГ°Г®ГўГҐГ°ГЄГі
 				break;
 
 			for (char ch : str) {
@@ -87,7 +87,7 @@ public:
 		}
 	}
 	double Num_2() {
-		printf("Введите n:\n");
+		printf("Г‚ГўГҐГ¤ГЁГІГҐ n:\n");
 		int n = 0;
 		do {
 			cin >> n;
@@ -212,27 +212,7 @@ public:
         printMST(result);
     }
 
-    void Num_3(Graph graph) {
-        graph.addEdge(0, 1, 2);
-        graph.addEdge(0, 5, 10);
-        graph.addEdge(0, 4, 3);
-        graph.addEdge(1, 2, 1);
-        graph.addEdge(1, 6, 35);
-        graph.addEdge(2, 3, 17);
-        graph.addEdge(3, 6, 13);
-        graph.addEdge(4, 5, 11);
-        graph.addEdge(4, 7, 20);
-        graph.addEdge(5, 6, 15);
-        graph.addEdge(5, 7, 12);
-        graph.addEdge(6, 7, 10);
-        graph.printGraph();
-
-        cout << endl;
-        graph.KruskalMST();
-
-        cout << endl;
-        graph.PrimMST();
-    }
+    
 };
 
 void Num_3_4() {
