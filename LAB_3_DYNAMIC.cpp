@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
+#include <iostream>
 
 #define V 7 // Количество вершин в графе
 
@@ -49,6 +50,7 @@ void shortestPath(int graph[V][V], int source) {
 }
 
 int main() {
+    system("chcp 1251");
     int graph[V][V] = {
         {0, 1, 0, 8, 25, 0, 20},
         { 0, 0, 2, 0, 0, 0, 15 },
